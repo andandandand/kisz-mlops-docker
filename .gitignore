@@ -1,0 +1,6 @@
+__pycache__/
+*.py[cod]
+*$py.class
+.venv
+model/multinomial_language_detector.joblib
+model/__pycache__
