@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Detection</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-4">
+        <form id="language-form">
+            <div class="form-group">
+                <label for="text">Enter Text:</label>
+                <textarea class="form-control" id="text" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Detect Language</button>
+        </form>
+        <!-- This is where the input text and detected language will be displayed -->
+        <div id="result" class="mt-4"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+        $("#language-form").submit(function(e) {
+            e.preventDefault();
+            
+            var formData = new FormData(); // Create an empty FormData object
+
+var text = document.getElementById("text").value;
+formData.append("input_text", text); // Append the text to the FormData object
+console.log(text);
+console.log(formData);
+
+$.ajax({
+    url: 'predict', // Adjust the URL as needed
+    type: 'POST',
+    data: formData,
+    cache: false,
+    processData: false,
+    contentType: false,
+    success: function(response) {
+        console.log("Response:", response);
+        $("#result").html('<h3>Input Text:</h3> <p>' + text + '</p><h3>Detected Language:</h3> <p>' + response.language + '</p>');
+    },
+    error: function(error) {
+        console.log(error);
+        $("#result").html('<h3>Error:</h3> <p>' + error.message + '</p>');
+    }
+});
+
+        });
+    </script>
+</body>
+</html>
