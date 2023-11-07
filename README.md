@@ -1,5 +1,41 @@
 # MLOps Docker for Beginners
 
+# Installation Guide
+
+## Introduction
+
+Thank you for your interest in our workshop about deploying machine learning models using Docker. This guide provides instructions for installing and setting up all the tools and environments required to prepare for the workshop.
+## Prerequisites
+- A Python IDE of your choice.
+- A package manager we will be using pip for the workshop.
+
+## Installation Guide
+
+### Step 1: Install Docker
+
+#### For Windows/Mac:
+- Visit the [Docker Desktop download page](https://www.docker.com/products/docker-desktop).
+- Follow the installation instructions:
+  - [Windows](https://docs.docker.com/desktop/windows/install/)
+  - [Mac](https://docs.docker.com/desktop/mac/install/)
+
+#### For Linux:
+- Choose your Linux distribution and follow the installation guide:
+  - [Ubuntu](https://docs.docker.com/engine/install/ubuntu/)
+  - [Fedora](https://docs.docker.com/engine/install/fedora/)
+  - [Debian](https://docs.docker.com/engine/install/debian/)
+- Ensure Docker Compose is installed: [Install Docker Compose](https://docs.docker.com/compose/install/).
+
+### Step 2: Install Git
+
+- Download and install Git from the [official site](https://git-scm.com/).
+- Validate the installation in the terminal:
+  ```
+  git --version
+  ```
+
+
+# Workshop Hands-On
 ## Hands-On 1: Hello-World toy example
 1. (Optional) Look for the ```hello-world``` Docker image on Docker hub: https://hub.docker.com/
 2. Download the Docker image using the command: ```docker pull hello-world```
