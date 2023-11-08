@@ -71,7 +71,7 @@ Thank you for your interest in our workshop about deploying machine learning mod
 1. Create a file with the name **Dockerfile**
 2. Find **Python version 3.11** on [Docker Hub](https://hub.docker.com/) and use it as a Base Image: ```FROM your-base-image:1.0```
 3. Change the working directory inside of the container: ```WORKDIR /app```
-4. Copy the ```requirements.txt``` file from the host file system into the docker container: ```COPY /from-host/ /to-container/```
+4. Copy the ```requirements.txt``` file from the host file system into the docker container: ```COPY requirements.txt /to-container/```
 5. Run a pip install for all the packages required: ```RUN pip install -r requirements.txt```
 6. Copy the rest of the application into the container: ```COPY /from-host/ /to-container/```
 7. Start the uvicorn server through the terminal command: ```CMD uvicorn app.location:api_name --host 0.0.0.0```
