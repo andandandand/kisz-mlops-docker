@@ -69,7 +69,7 @@ Thank you for your interest in our workshop about deploying machine learning mod
 
 ## Hands-On 5: Dockerfile
 1. Create a file with the name **Dockerfile**
-2. Find your favourite Python version on [Docker Hub](https://hub.docker.com/) and use it as a Base Image: ```FROM your-base-image:1.0```
+2. Find **Python version 3.11** on [Docker Hub](https://hub.docker.com/) and use it as a Base Image: ```FROM your-base-image:1.0```
 3. Change the working directory inside of the container: ```WORKDIR /app```
 4. Copy the ```requirements.txt``` file from the host file system into the docker container: ```COPY /from-host/ /to-container/```
 5. Run a pip install for all the packages required: ```RUN pip install -r requirements.txt```
