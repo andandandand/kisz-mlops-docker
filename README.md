@@ -75,3 +75,10 @@ Thank you for your interest in our workshop about deploying machine learning mod
 5. Run a pip install for all the packages required: ```RUN pip install -r requirements.txt```
 6. Copy the rest of the application into the container: ```COPY /from-host/ /to-container/```
 7. Start the uvicorn server through the terminal command: ```CMD uvicorn app.location:api_name --host 0.0.0.0```
+
+## Live-Demo: Deploying the Container with Docker Compose
+1. Build and run the Docker container with Docker Compose: ```docker compose up --build```
+2. **Problem:** Container shuts down when terminal closes. **Solution:** ```docker compose up -d```
+3. **Problem:** Container doesn't restart when machine restarts. **Solution:** Add ```restart:always``` to the ```compose.yaml``` file.
+4. **Problem:** Application has errors and I need to see the logs. **Solution:** Use ```docker ps``` to get the container ID and then use  ```docker logs [ID]``` to read the logs.
+5. Close the container using  ```docker compose down```
