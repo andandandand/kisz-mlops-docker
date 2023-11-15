@@ -7,7 +7,7 @@ services:
       context: .
     ports:
       - "8000:8000" # Maps port 8000 on the host to port 8000 in the container
-    volumes:
-      - .:/api # Optional: Mounts the current directory on the host to /app in the container. Useful during development for live code changes.
+    # volumes:
+    #  - .:/api # Optional: Mounts the current directory on the host to /app in the container. Useful during development for live code changes.
 
 
