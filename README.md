@@ -25,7 +25,9 @@ Thank you for your interest in our workshop about deploying machine learning mod
   - [Fedora](https://docs.docker.com/engine/install/fedora/)
   - [Debian](https://docs.docker.com/engine/install/debian/)
 - Ensure Docker Compose is installed: [Install Docker Compose](https://docs.docker.com/compose/install/).
-
+#### Create a Docker Account:
+- Create a Docker Account to be able to use all the features of Docker: [Docker signup page](https://hub.docker.com/signup)
+- Open Docker Desktop and login to your account.
 ### Step 2: Install Git
 
 - Download and install Git from the [official site](https://git-scm.com/).
@@ -33,7 +35,6 @@ Thank you for your interest in our workshop about deploying machine learning mod
   ```
   git --version
   ```
-
 
 # Workshop Hands-On
 ## Hands-On 1: Hello-World toy example
