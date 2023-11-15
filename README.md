@@ -21,10 +21,9 @@ Thank you for your interest in our workshop about deploying machine learning mod
 
 #### For Linux:
 - Choose your Linux distribution and follow the installation guide:
-  - [Ubuntu](https://docs.docker.com/engine/install/ubuntu/)
-  - [Fedora](https://docs.docker.com/engine/install/fedora/)
-  - [Debian](https://docs.docker.com/engine/install/debian/)
-- Ensure Docker Compose is installed: [Install Docker Compose](https://docs.docker.com/compose/install/).
+  - [Ubuntu](https://docs.docker.com/desktop/install/ubuntu/)
+  - [Fedora](https://docs.docker.com/desktop/install/fedora/)
+  - [Debian](https://docs.docker.com/desktop/install/debian/)
 #### Create a Docker Account:
 - Create a Docker Account to be able to use all the features of Docker: [Docker signup page](https://hub.docker.com/signup)
 - Open Docker Desktop and login to your account.
