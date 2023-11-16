@@ -1,6 +1,6 @@
 [![logo.png](logo.png)](https://hpi.de/en/kisz/home.html)
 
-# MLOps Docker for Beginners
+# Containerize your intelligence: A hands-on workshop on deploying AI models with Docker
 Welcome to our workshop on deploying machine learning models using Docker, hosted by the AI Service Center in Berlin-Brandenburg. 
 Visit our [website](https://hpi.de/en/kisz/home.html) for more details about our offerings!
 
