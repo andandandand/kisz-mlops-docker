@@ -4,7 +4,10 @@
 Welcome to our workshop on deploying machine learning models using Docker, hosted by the AI Service Center in Berlin-Brandenburg. 
 Visit our [website](https://hpi.de/en/kisz/home.html) for more details about our offerings!
 
-## Installation Guide
+## Installation Using Gitpod and Google Chrome
+We can do this workshop fully through our Google Chrome browswers by using VSCode through [Gitpod](https://www.gitpod.io/). For this you would need to install the [Gitpod Google Chrome extension](https://chromewebstore.google.com/search/Gitpod). 
+
+## Local Installation Guide
 This guide provides instructions for installing and setting up all the tools and environments you need to participate in the workshop.
 Familiarity with opening and using a terminal is required. Here's how you can start a terminal:
 
